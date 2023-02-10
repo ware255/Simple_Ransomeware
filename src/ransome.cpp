@@ -19,11 +19,13 @@ void rw::xor_crypto(int key, int n) {
         data += buf + "\n";
     }
     ifs.close();
-    if (n != 0) strLen = data.size();
+    strLen = data.size();
     std::ofstream ofs(filename, std::ios_base::out | std::ios_base::binary);
     for (size_t i = 0; i < data.size(); i++) data[i] ^= key;
     ofs.write(data.c_str(), strLen);
     ofs.close();
+    data = "";
+    strLen = 0;
 }
 
 /* 暗号 */
