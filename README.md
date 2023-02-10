@@ -1,4 +1,4 @@
-# Simple_Ramsomeware
+# Simple_Ransomeware
 なるべく分かりやすくランサムウェアのソースコードを書きました。
 
 ## 注意
